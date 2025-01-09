@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Fisheye</title>
+  </head>
+  <body>
+    <div class="modal">
+      <div class="header__modal">
+        <p>Contactez-moi</p>
+        <p>Mimi Keel</p>
+      </div>
+      <div class="modal__form">
+        <form action="" method="post">
+          <label for="firstName">Prénom</label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            class="input__text"
+          />
+          <label for="lastName">Prénom</label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            class="input__text"
+          />
+          <label for="email">Prénom</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            class="input__text"
+          />
+          <label for="message">Message</label>
+          <textarea name="message" id="message" class="input__text"></textarea>
+        </form>
+      </div>
+    </div>
+    <div class="lightbox">
+      <div class="previous">
+        <i class="fa-solid fa-chevron-left icone__previous"></i>
+      </div>
+      <img
+        src="assets/images/photographers/samplePhotos-Medium/Mimi Keel/Animals_Rainbow.webp"
+        alt=""
+        class="lightbox__picture"
+      />
+      <div class="next">
+        <i class="fa-solid fa-xmark icone__close"></i>
+        <i class="fa-solid fa-chevron-right icone__next"></i>
+      </div>
+    </div>
+    <div class="container">
+      <header class="header__photographer">
+        <a href="index.html" class="link__logo">
+          <img src="assets/images/logo.webp" alt="logo" class="header__logo" />
+        </a>
+        <section class="header__presentation">
+          <div class="header__presentation__content">
+            <h1 class="photographer__name">Mimi Keel</h1>
+            <p class="phtographer__location">London, UK</p>
+            <p class="phtographer__tagline">Voir le beau dans le quotidien</p>
+          </div>
+          <div class="contact__block">
+            <button class="photographer__contact">Contactez-moi</button>
+          </div>
+          <div class="picture__block">
+            <img
+              src="assets/images/photographers/thumbnails/MimiKeel.webp"
+              alt=""
+              class="photographer__thumbnail"
+            />
+          </div>
+        </section>
+      </header>
+      <main class="main__photographer">
+        <div class="medias__sort">
+          <p class="text__sort">Trier par</p>
+          <div class="dropdown">
+            <button class="button__dropdown">
+              <p class="button__dropdown__text">Popularité</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="dropdown__content">
+              <div class="dropdown__item">
+                <a href="" class="dropdown__link">
+                  <hr class="separator" />
+                  <span class="link__text"> Date </span>
+                </a>
+              </div>
+              <div class="dropdown__item">
+                <a href="" class="dropdown__link">
+                  <hr class="separator" />
+                  <span class="link__text"> Titre </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="galery">
+          <figure class="card">
+            <img
+              src="assets/images/photographers/samplePhotos-Medium/Mimi Keel/Animals_Rainbow.webp"
+              alt=""
+              class="galery__card__picture"
+            />
+            <!-- <video
+                  autoPlay
+                  loop
+                  muted
+                  class="card__video"
+                  src=""
+                ></video> -->
+
+            <figcaption class="card__legend">
+              <p class="picture__title">Lorem ipsum</p>
+              <div class="cards__likes">
+                <span class="nbLikes">124</span>
+                <i class="fa-solid fa-heart icone__heart"></i>
+              </div>
+            </figcaption>
+          </figure>
+        </section>
+        <div class="block__likes">
+          <p>
+            <span class="nb__total__likes">124</span>
+            <i class="fa-solid fa-heart icone__heart__likes"></i>
+          </p>
+          <p class="likes__price">400€ /jour</p>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="scripts/pages/photographer.js"></script>
+  </body>
+</html>
